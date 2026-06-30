@@ -1,0 +1,31 @@
+// ───────────────────────────────────────────────────────────────
+// BLINKIT DATE TABLE  —  one-paste calculated table
+// Power BI Desktop → Modeling tab → New table → paste ALL of this.
+// Data spans 2023-03-16 to 2024-11-04, so calendar is 2023-01-01..2024-12-31.
+// After it loads:  Mark as date table (Date col), then set 3 Sort-by-column
+// settings noted at the bottom.
+// ───────────────────────────────────────────────────────────────
+
+Date =
+VAR _Start = DATE ( 2023, 1, 1 )
+VAR _End   = DATE ( 2024, 12, 31 )
+RETURN
+ADDCOLUMNS (
+    CALENDAR ( _Start, _End ),
+    "Year",           YEAR ( [Date] ),
+    "Quarter",        "Q" & QUARTER ( [Date] ),
+    "Month Number",   MONTH ( [Date] ),
+    "Month Name",     FORMAT ( [Date], "MMMM" ),
+    "Year Month",     FORMAT ( [Date], "MMM yyyy" ),
+    "Year Month Sort", YEAR ( [Date] ) * 100 + MONTH ( [Date] ),
+    "Day Name",       FORMAT ( [Date], "dddd" ),
+    "Day Number",     WEEKDAY ( [Date], 2 ),
+    "Week Number",    WEEKNUM ( [Date], 2 ),
+    "Is Weekend",     IF ( WEEKDAY ( [Date], 2 ) > 5, "Weekend", "Weekday" )
+)
+
+// ── After loading, do these 4 clicks (DAX can't set them) ──
+// 1. Modeling → Mark as date table → choose [Date].
+// 2. Select 'Month Name'  → Column tools → Sort by column → 'Month Number'.
+// 3. Select 'Year Month'  → Column tools → Sort by column → 'Year Month Sort'.
+// 4. Select 'Day Name'    → Column tools → Sort by column → 'Day Number'.

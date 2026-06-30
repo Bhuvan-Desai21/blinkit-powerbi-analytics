@@ -1,0 +1,22 @@
+# Personal prep notes — kept local, not part of the public project
+CV_Summary_and_Talking_Points.md
+Interview_Prep.md
+
+# Power BI temporary / cache / lock files
+*.tmp
+*.pbix.tmp
+~$*
+.pbi/
+*TempState*
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Scratch / source artifacts (pre-project diagrams)
+data_model.dot
+data_model.svg
+data_model_improved.dot
+data_model_improved.svg
+README_DIAGRAM.md

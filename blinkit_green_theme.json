@@ -1,0 +1,53 @@
+{
+  "name": "Blinkit Green",
+  "dataColors": [
+    "#0C831F",
+    "#F8CB46",
+    "#1AAE3A",
+    "#5BB974",
+    "#2E7D32",
+    "#9AD4A8",
+    "#127C2B",
+    "#C8E6C9",
+    "#0A6E1A",
+    "#7FC68C"
+  ],
+  "background": "#FFFFFF",
+  "secondaryBackground": "#F4F7F4",
+  "foreground": "#1A1A1A",
+  "foregroundNeutralSecondary": "#5A5F5A",
+  "tableAccent": "#0C831F",
+  "good": "#0C831F",
+  "neutral": "#F8CB46",
+  "bad": "#E03131",
+  "maximum": "#0C831F",
+  "minimum": "#C8E6C9",
+  "textClasses": {
+    "title": { "fontFace": "Segoe UI Semibold", "fontSize": 14, "color": "#1A1A1A" },
+    "header": { "fontFace": "Segoe UI Semibold", "fontSize": 12, "color": "#1A1A1A" },
+    "label": { "fontFace": "Segoe UI", "fontSize": 10, "color": "#5A5F5A" },
+    "callout": { "fontFace": "Segoe UI Semibold", "fontSize": 32, "color": "#0C831F" }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [{ "show": true, "color": { "solid": { "color": "#FFFFFF" } }, "transparency": 0 }],
+        "border": [{ "show": true, "color": { "solid": { "color": "#E6EAE6" } }, "radius": 12 }],
+        "dropShadow": [{ "show": true, "preset": "Custom", "color": { "solid": { "color": "#000000" } }, "position": "Outer", "shadowSpread": 4, "shadowBlur": 12, "transparency": 92, "angle": 90 }],
+        "visualHeader": [{ "show": false }],
+        "title": [{ "show": true, "fontColor": { "solid": { "color": "#1A1A1A" } }, "fontSize": 12, "fontFamily": "Segoe UI Semibold", "alignment": "left" }]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [{ "color": { "solid": { "color": "#0C831F" } }, "fontSize": 30, "fontFamily": "Segoe UI Semibold" }],
+        "categoryLabels": [{ "color": { "solid": { "color": "#5A5F5A" } }, "fontSize": 10, "fontFamily": "Segoe UI" }]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [{ "color": { "solid": { "color": "#F4F7F4" } }, "transparency": 0 }]
+      }
+    }
+  }
+}

@@ -2,6 +2,8 @@
 
 A four-page, end-to-end business intelligence report built on a 9-table Blinkit retail dataset (~120K rows). The project covers the full BI workflow: **ETL in Power Query → dimensional data modeling → 45+ DAX measures → an interactive, themed 4-page report**, with a deliberate focus on **data validation** — several metrics were re-scoped or dropped after profiling revealed the source data couldn't support them.
 
+### **Dataset Used:** [Blinkit Dataset Kaggle](https://www.kaggle.com/datasets/akxiit/blinkit-sales-dataset/data)
+
 > **Tools:** Power BI Desktop · Power Query (M) · DAX · Tabular Editor · Star-schema modeling
 > **Domain:** Quick-commerce / q-retail (orders, delivery SLA, category profitability, customer retention, marketing funnel)
 

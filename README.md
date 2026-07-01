@@ -218,7 +218,7 @@ The part of the project I'm most deliberate about. Profiling (Python/pandas) sur
 ```
 
 ### Reproduce
-1. Open `my_first_powerbi.pbix` (or load `data/*.csv` via Power Query).
+1. Open `Blinkit_Analytics_Dashboard.pbix` (or load `data/*.csv` via Power Query).
 2. Apply the type fixes (esp. `order_date` → Date).
 3. New table → paste `Date_Table.dax`; mark as date table.
 4. Run `Create_All_Measures.csx` in Tabular Editor.
